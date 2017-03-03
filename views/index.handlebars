@@ -3,12 +3,17 @@
 <h2 class="page-header" >ALL USER SUMMARY</h2>
 
 {{#each allusers}}
-<span>{{this.name}}</span>  <span>{{this.username}}</span> <span>{{this.email}}</span>
+<span><h1>{{this.name}}</span> </h1>
 <br>
-<br>
-
+  {{#each this.photos}}
+  <span>{{this.name}}  <img style="max-width: 10%;" src="/Uploads/{{this.src}}"/></span>
+  {{/each}}
+  <br>
+  {{#each this.links}}
+  <span><h3>{{this.name}}</h3> </span> <span><p> {{this.link}} </span> </p>
+  {{/each}}
 {{/each}}
-
+<br>
 </div>
 
 <style type="text/css">
