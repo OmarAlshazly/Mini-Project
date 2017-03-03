@@ -1,0 +1,30 @@
+{
+  "name": "SHAZLY-APP",
+  "version": "1.0.0",
+  "description": "MEAN STACK MINI PROJECT",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": ""
+  },
+  "author": "Omar Alshazly",
+  "license": "ISC",
+  "dependencies": {
+
+    "multer": "1.1.0",
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongodb": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*"
+  }
+}

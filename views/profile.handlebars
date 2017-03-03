@@ -1,0 +1,34 @@
+<div style="max-width: 50%;margin-left: 25%">
+
+{{#each user.photos }}
+  <h1> {{this.name}} </h1>
+  <img style="max-width: 30%;" src="/Uploads/{{this.src}}"/>
+{{/each}}
+
+
+{{#each user.links }}
+  <h1> {{this.name}} </h1>
+  <p> {{this.link}} </p>
+{{/each}}
+
+
+
+<form id="uploadForm" enctype="multipart/form-data" method="POST" action="/users/addFile/"style="max-width: 50%;" >
+              <br>
+            <input type="text" class="form-control" name="photoname" placeholder="Project Name">
+            <br>
+            <input type="file" class="form-control btn" name="uploaded" style="margin-top: 4px;">
+            <br>
+            <button type="submit" value="Upload Image" class="btn navbar-inverse" style="margin: 10px;">Upload Image</button>
+		    		</form>
+
+
+<form  method="POST" action="/users/addLink/"style="max-width: 50%;" >
+              <br>
+            <input type="text" class="form-control" name="linkName" placeholder="Project Name">
+            <br>
+            <input type="text" class="form-control" name="linksrc" placeholder="Google Drive Link">
+            <br>
+            <button type="submit" value="Upload Link" class="btn navbar-inverse" style="margin: 10px;">Post Link</button>
+		    		</form>
+</div>
